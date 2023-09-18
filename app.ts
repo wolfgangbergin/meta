@@ -1,0 +1,2 @@
+let wolf = 'wolf'
+wolf
