@@ -1,3 +1,1 @@
-"use strict";
-let wolf = 'wolf';
-wolf;
+export { kim } from './temp1.js';
