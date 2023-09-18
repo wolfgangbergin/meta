@@ -1,3 +1,3 @@
-let kim = 'kim313';
-kim;
-export { kim };
+let temp1 = 'temp1';
+temp1;
+export { temp1 };

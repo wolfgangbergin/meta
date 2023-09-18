@@ -1,9 +1,11 @@
+export {wolfgang} from './wolfgang.js'
 
-export {kim} from './temp1.js'
+export {temp1} from './temp1.js'
+
+l(globalThis, 'globalThis')
+
+console.log(globalThis, 'globalThis')
 
 
 
-
-
-
-
+kim.testLog(globalThis, 'globalThis')
