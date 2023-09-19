@@ -1,11 +1,5 @@
-globalThis.l = function (...x) {
-    console.log(...x);
-};
-globalThis.kim = {
-    testLog: function (...x) {
-        l(...x);
-    }
-};
+globalThis.l = console.log;
+globalThis.d = console.dir;
+globalThis.kim = {};
 const wolfgang = 'wolfgang';
-wolfgang;
 export { wolfgang };

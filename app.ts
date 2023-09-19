@@ -1,11 +1,8 @@
-export {wolfgang} from './wolfgang.js'
+export { wolfgang } from './wolfgang.js';
 
-export {temp1} from './temp1.js'
-
-l(globalThis, 'globalThis')
-
-console.log(globalThis, 'globalThis')
+export { temp1 } from './temp1.js';
 
 
+d(Symbol)
 
-kim.testLog(globalThis, 'globalThis')
+
