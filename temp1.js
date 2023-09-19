@@ -8,12 +8,29 @@ const person = {
 ///////////////////////////////////////////////app
 person[wolfId] = 'wolf';
 person[Symbol.toStringTag] = 'kim';
-person;
 const company = {
+    curEmploee: 0,
     employees: ['bob', 'kim', 'joe'],
     next() {
-        return { vale: this.employees[0], done: false };
-    }
+        if (this.curEmploee >= 5) {
+            return { value: this.curEmploee, done: true };
+        }
+        const returnValue = { value: this.employees[this.curEmploee], done: false };
+        this.curEmploee++;
+        return returnValue;
+    },
 };
+// company.next();//?
+// company.next();//?
+// company.next();//?
+// company.next();//?
+// company.next();//?
+let employee = company.next();
+while (!employee.done) {
+    employee.value; //?
+    employee.done; //?
+    company.curEmploee; //?
+    employee = company.next();
+}
 let temp1 = 'temp1';
 export { temp1, person };

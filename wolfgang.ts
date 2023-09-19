@@ -1,6 +1,6 @@
 declare global {
-  var l: (...x: any) => void;
-  var d: (...x: any) => void;
+  var l: (...x: any[]) => void;
+  var d: (...x: any[]) => void;
   var wolfId: symbol;
 
 
@@ -25,6 +25,7 @@ globalThis.kim = {
 
 const wolfgang = 'wolfgang';
 
+const jojo = console.log;
 
 
-export { wolfgang };
+export { wolfgang, jojo };
