@@ -12,7 +12,7 @@ const company = {
     curEmploee: 0,
     employees: ['bob', 'kim', 'joe'],
     next() {
-        if (this.curEmploee >= 5) {
+        if (this.curEmploee >= company.employees.length) {
             return { value: this.curEmploee, done: true };
         }
         const returnValue = { value: this.employees[this.curEmploee], done: false };
@@ -27,9 +27,7 @@ const company = {
 // company.next();//?
 let employee = company.next();
 while (!employee.done) {
-    employee.value; //?
-    employee.done; //?
-    company.curEmploee; //?
+    console.log(employee.value);
     employee = company.next();
 }
 let temp1 = 'temp1';

@@ -1,4 +1,4 @@
-import {jojo} from './wolfgang.js';
+import { jojo } from './wolfgang.js';
 /////////////////////////////////////////////// Library
 const wolfId = Symbol('Symbol.wolfId');
 
@@ -18,7 +18,7 @@ const company = {
   curEmploee: 0,
   employees: ['bob', 'kim', 'joe'],
   next() {
-    if (this.curEmploee >= 5) {
+    if (this.curEmploee >= company.employees.length) {
       return { value: this.curEmploee, done: true };
     }
 
@@ -28,25 +28,18 @@ const company = {
   },
 };
 
-
 // company.next();//?
 // company.next();//?
 // company.next();//?
 // company.next();//?
 // company.next();//?
-
 
 let employee = company.next();
 
-
 while (!employee.done) {
-   employee.value; //?
-    employee.done;//?
-    company.curEmploee//?
+  console.log(employee.value)
   employee = company.next();
 }
-
-
 
 let temp1 = 'temp1';
 
