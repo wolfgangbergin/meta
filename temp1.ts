@@ -36,10 +36,10 @@ const company = {
 
 let employee = company.next();
 
-while (!employee.done) {
-  console.log(employee.value)
-  employee = company.next();
-}
+// while (!employee.done) {
+//   console.log(employee.value)
+//   employee = company.next();
+// }
 
 let temp1 = 'temp1';
 

@@ -1,9 +1,9 @@
-"use strict";
 const company = {
-    isDone: false,
     count: 0,
-    employees: ['bob', 'kim', 'joe'],
+    employees: ['bob', 'kim', 'wolf',],
     wolfNext() {
+        company.count; //?
+        this.employees[this.count]; //?
         if (this.count >= this.employees.length) {
             return { value: this.employees[this.count], count: this.count, done: true };
         }
@@ -16,7 +16,10 @@ const company = {
 // company.wolfNext(); //?
 // company.wolfNext(); //?
 // company.wolfNext(); //?
-let kimbo = company.wolfNext.bind(company);
-while (!company.isDone) {
-    kimbo(); //?
+let kimbo = company.wolfNext();
+while (!kimbo.done) {
+    kimbo; //?
+    kimbo = company.wolfNext();
 }
+const temp2 = 'temp2';
+export { temp2 };

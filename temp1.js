@@ -26,9 +26,9 @@ const company = {
 // company.next();//?
 // company.next();//?
 let employee = company.next();
-while (!employee.done) {
-    console.log(employee.value);
-    employee = company.next();
-}
+// while (!employee.done) {
+//   console.log(employee.value)
+//   employee = company.next();
+// }
 let temp1 = 'temp1';
 export { temp1, person };
