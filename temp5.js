@@ -5,7 +5,7 @@
 let wolf515 = {
     title: 'wolfObject',
 };
-Object.defineProperty(wolf515, 'car', {
+Reflect.defineProperty(wolf515, 'car', {
     value: 'puckup Chevy Silverado pick up truck',
 });
 Reflect.defineProperty(wolf515, 'price', {
@@ -16,11 +16,11 @@ Reflect.defineProperty(wolf515, 'price', {
 });
 Reflect.setPrototypeOf(wolf515, {
     toString() {
+        // const newObj: Kim = wolf515;
+        // return newObj.title;
         return wolf515.title;
     },
 });
-wolf515.toString(); //?
-// Reflect.deleteProperty(wolf515, 'price');
-// delete wolf515.price;
-wolf515; //?
+// Reflect.deleteProperty(wolf515, 'price');/*?*/
+wolf515;
 export { wolf515 };
